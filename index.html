@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>委託教材</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg: #faf8f5;
+            --card-bg: #ffffff;
+            --border: #e8e4df;
+            --text: #2c2c2c;
+            --text-muted: #6b6b6b;
+            --accent: #8b4513;
+            --accent-light: #a0522d;
+        }
+
+        body {
+            font-family: 'Noto Serif TC', serif;
+            background: var(--bg);
+            color: var(--text);
+            min-height: 100vh;
+            padding: 3rem 1.5rem;
+        }
+
+        .container {
+            max-width: 720px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        h1 {
+            font-size: 1.75rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        h2 {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        a.card {
+            display: flex;
+            flex-direction: column;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 1rem;
+            text-decoration: none;
+            color: var(--text);
+            transition: box-shadow 0.2s, transform 0.15s;
+        }
+
+        a.card:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            transform: translateY(-2px);
+        }
+
+        .card-title {
+            font-weight: 600;
+            color: var(--accent);
+            margin-bottom: 0.25rem;
+        }
+
+        .card-sub {
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+
+        .list {
+            display: grid;
+            gap: 0.5rem;
+        }
+
+        a.list-item {
+            display: block;
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 0.75rem 1rem;
+            text-decoration: none;
+            color: var(--accent);
+            font-weight: 600;
+            transition: background 0.15s;
+        }
+
+        a.list-item:hover {
+            background: var(--border);
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 4rem;
+            color: var(--text-muted);
+            font-size: 0.8rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>NYCU-TCE</h1>
+            <p class="subtitle">委託教材</p>
+        </header>
+
+        <section>
+            <h2>經典閱覽</h2>
+            <div class="grid">
+                <a class="card" href="./論語全覽圖/">
+                    <span class="card-title">論語全覽圖</span>
+                    <span class="card-sub">TheAnalects</span>
+                </a>
+                <a class="card" href="./孟子全覽圖/">
+                    <span class="card-title">孟子全覽圖</span>
+                    <span class="card-sub">Mencius</span>
+                </a>
+                <a class="card" href="./道德經通覽圖/">
+                    <span class="card-title">道德經通覽圖</span>
+                    <span class="card-sub">Laozi</span>
+                </a>
+                <a class="card" href="./莊子通覽圖/">
+                    <span class="card-title">莊子通覽圖</span>
+                    <span class="card-sub">zhuangzi</span>
+                </a>
+                <a class="card" href="./易方陣/">
+                    <span class="card-title">易方陣</span>
+                    <span class="card-sub">YiFangJhen</span>
+                </a>
+                <a class="card" href="./茶、易經/">
+                    <span class="card-title">茶、易經</span>
+                    <span class="card-sub">TeaHexagram</span>
+                </a>
+            </div>
+        </section>
+
+        <section>
+            <h2>工具</h2>
+            <div class="list">
+                <a class="list-item" href="./ebook/">PDF 閱讀器</a>
+            </div>
+        </section>
+    </div>
+</body>
+
+</html>
